@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>116 學測考前考情須知｜國立鳳新高中</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#492207;--ink2:#3E1F00;--cream:#fcfcfb;--rule:#D8D0C8;--muted:#7A5A3C;--light:#5E4028;
+  --peach:#F9CEBC;--peach2:#FDE8DE;
+  --blue:#C4D9EC;--blue2:#E2EEF7;
+  --mint:#BDE8E5;--mint2:#DBEEED;
+  --pink:#FCCFC9;--pink2:#FDE5E2;
+  --sky:#CCE9F4;--sky2:#E0F1F8;
+  --warm:#FAE0C6;--warm2:#FAEEDE;
+  --grey:#E4DCD5;--grey2:#F0ECE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-serif;
+  background:var(--cream);color:var(--ink);line-height:1.85;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px 60px}
+
+/* ── Hero ── */
+.hero{text-align:center;padding:52px 20px 36px;position:relative}
+.hero .badge{display:inline-block;background:var(--ink2);color:#FEE6DA;font-size:12px;font-weight:700;
+  letter-spacing:3px;padding:5px 18px;border-radius:20px;margin-bottom:18px}
+.hero h1{font-size:30px;font-weight:700;letter-spacing:3px;color:var(--ink2);line-height:1.4}
+.hero .date-big{font-size:42px;font-weight:700;color:var(--ink2);letter-spacing:2px;margin:18px 0 4px}
+.hero .date-big .dash{color:var(--rule);margin:0 12px;font-weight:300}
+.hero .date-sub{font-size:13px;color:var(--muted);letter-spacing:1.5px}
+.hero .pills{display:flex;justify-content:center;gap:10px;margin-top:20px;flex-wrap:wrap}
+.hero .pill{background:transparent;border:none;padding:4px 0;
+  font-size:13.5px;font-weight:400;color:var(--muted);letter-spacing:1.5px}
+.hero .pill+.pill::before{content:"·";margin-right:10px;color:var(--rule)}
+.hero .school{margin-top:22px;font-size:12px;color:var(--muted);letter-spacing:1px}
+
+/* ── Nav ── */
+.nav{display:flex;justify-content:center;gap:8px;margin:0 0 40px;flex-wrap:wrap;
+  position:sticky;top:0;background:var(--cream);padding:14px 0;z-index:100;
+  border-bottom:1px solid var(--rule);backdrop-filter:blur(6px)}
+.nav a{text-decoration:none;background:var(--ink2);border:none;border-radius:22px;
+  padding:8px 22px;font-size:13px;font-weight:700;color:#FDE8DE;letter-spacing:1px;
+  transition:all .2s}
+.nav a:hover{background:#5E4028}
+
+/* ── Section headers ── */
+.sec{margin-top:48px}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.sec-num{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.sec h2{font-size:20px;font-weight:700;color:var(--ink2);letter-spacing:1.5px}
+.sec .lead{font-size:13.5px;color:var(--light);margin-bottom:20px}
+
+/* ── Schedule timeline ── */
+.days{display:flex;flex-direction:column;gap:16px}
+.day{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px;overflow:hidden}
+.day-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px}
+.day-label{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:2px}
+.day-date{font-size:18px;font-weight:700;color:var(--ink2);letter-spacing:1px}
+.timeline{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.exam-block{border-radius:8px;padding:14px 16px;flex:1;min-width:140px;position:relative}
+.exam-block .subj{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
+.exam-block .time{font-size:12px;color:var(--light);margin-top:2px;letter-spacing:.5px}
+.exam-block .meta{font-size:11.5px;color:var(--muted);margin-top:6px}
+.exam-block .meta b{color:var(--ink2)}
+.break-dot{display:flex;align-items:center;justify-content:center;width:36px;flex-shrink:0;
+  color:var(--rule);font-size:18px;letter-spacing:3px}
+
+/* ── Subject cards ── */
+.subj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.subj-card{background:#fff;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.subj-card-head{padding:16px 20px 12px;display:flex;align-items:baseline;justify-content:space-between}
+.subj-card-head .name{font-size:17px;font-weight:700;color:var(--ink2);letter-spacing:1px}
+.subj-card-head .score{font-size:13px;color:var(--muted)}
+.subj-card-head .score em{font-style:normal;font-size:22px;font-weight:700;color:var(--ink2);margin-right:2px}
+.subj-card-body{padding:0 20px 18px}
+.subj-card table{width:100%;border-collapse:collapse;font-size:13px}
+.subj-card th,.subj-card td{padding:5px 6px;text-align:center;border-bottom:1px solid #F3E9DF}
+.subj-card th{font-weight:700;color:var(--ink2);font-size:12px;letter-spacing:.5px}
+.subj-card tr:last-child td,.subj-card tr:last-child th{border-bottom:none}
+.subj-card .total td{font-weight:700;color:var(--ink2);border-top:1.5px solid var(--rule)}
+.subj-card .note-line{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+.subj-accent{height:4px;width:100%}
+
+/* ── Key box ── */
+.key{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--peach);
+  padding:18px 22px;border-radius:8px;font-size:14px;margin:16px 0}
+.key b{color:var(--ink2)}
+
+/* ── Score section ── */
+.score-steps{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.step{flex:1;min-width:180px;background:#fff;border:1px solid var(--rule);border-radius:10px;
+  padding:18px;text-align:center}
+.step .num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:50%;background:var(--peach);font-size:14px;font-weight:700;color:var(--ink2)}
+.step .desc{font-size:13px;color:var(--light);margin-top:8px;line-height:1.6}
+.step .desc b{color:var(--ink2)}
+
+.example{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px;margin:16px 0}
+.example .label{font-size:12px;color:var(--muted);letter-spacing:1px;font-weight:700;margin-bottom:10px}
+.example .formula{font-size:15px;color:var(--ink2);font-weight:700;line-height:1.8}
+.example .formula .hl{background:var(--peach2);padding:2px 8px;border-radius:4px}
+
+/* ── Five standards SVG ── */
+.five-std{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:24px 22px;margin:16px 0}
+.five-std h3{font-size:15px;font-weight:700;color:var(--ink2);margin-bottom:16px;letter-spacing:1px}
+
+/* ── Myth cards ── */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.myth{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.myth .q{font-size:14px;font-weight:700;color:var(--ink2);margin-bottom:8px;line-height:1.5}
+.myth .q::before{content:"✗ ";color:#D4694A}
+.myth .a{font-size:13px;color:var(--light);line-height:1.7}
+.myth .a::before{content:"✓ ";color:#5A9E6F;font-weight:700}
+
+/* ── Route section ── */
+.route-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin:16px 0}
+.route{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px;text-align:center}
+.route .rname{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
+.route .rpct{font-size:28px;font-weight:700;color:var(--ink2);margin:6px 0}
+.route .rpct small{font-size:14px;color:var(--muted)}
+.route .rdesc{font-size:12px;color:var(--muted);line-height:1.6;margin-top:6px}
+
+/* ── Star recommendation ── */
+.star-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border-radius:10px;overflow:hidden;
+  border:1px solid var(--rule)}
+.star-table th,.star-table td{padding:9px 10px;text-align:center;border-bottom:1px solid #F3E9DF}
+.star-table thead th{background:var(--warm);color:var(--ink2);font-weight:700;letter-spacing:1px;
+  border-bottom:1.5px solid var(--rule);font-size:12.5px}
+.star-table .rl{text-align:left;padding-left:14px;font-weight:700;color:var(--ink2)}
+.star-table tr:last-child td{border-bottom:none}
+.star-table .hi{background:var(--warm2)}
+
+/* ── Registration highlight ── */
+.reg-box{background:var(--peach2);border:2px solid var(--peach);border-radius:12px;padding:24px;margin:16px 0}
+.reg-box h3{font-size:16px;font-weight:700;color:var(--ink2);margin-bottom:12px;letter-spacing:1px}
+.reg-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.reg-label{font-size:13px;color:var(--light);min-width:100px;font-weight:700}
+.reg-val{font-size:15px;font-weight:700;color:var(--ink2);letter-spacing:.5px}
+.reg-warn{font-size:12.5px;color:#A0561A;font-weight:700;margin-top:8px;line-height:1.6}
+
+/* ── Bar chart mini ── */
+.bars{display:flex;align-items:flex-end;gap:18px;justify-content:center;height:120px;margin:16px 0;padding:0 20px}
+.bar-item{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;max-width:80px}
+.bar-fill{width:100%;border-radius:6px 6px 0 0;transition:height .3s}
+.bar-label{font-size:12px;font-weight:700;color:var(--ink2)}
+.bar-val{font-size:11px;color:var(--muted)}
+
+/* ── Note ── */
+.note{background:var(--grey2);border:1px solid var(--rule);padding:16px 20px;border-radius:8px;
+  font-size:13px;color:var(--light);margin-top:16px;line-height:1.7}
+.note b{color:var(--ink2)}
+
+/* ── Footer ── */
+.foot{margin-top:52px;padding-top:18px;border-top:1.5px solid var(--rule);color:var(--muted);
+  font-size:12px;line-height:2;text-align:center}
+.foot b{color:var(--ink2)}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .hero h1{font-size:22px}
+  .hero .date-big{font-size:30px}
+  .timeline{flex-direction:column}
+  .break-dot{width:100%;height:8px}
+  .subj-grid{grid-template-columns:1fr}
+  .route-grid{grid-template-columns:1fr 1fr}
+  .myth-grid{grid-template-columns:1fr}
+  .nav a{padding:6px 14px;font-size:12px}
+  .score-steps{flex-direction:column}
+}
+@media print{
+  body{background:#fff;padding:10px}
+  .nav{display:none}
+  .sec{page-break-before:auto}
+  .day,.subj-card,.route,.myth,.step{page-break-inside:avoid}
+}
+</style></head><body>
+<div class="wrap">
+
+<!-- ════ HERO ════ -->
+<div class="hero">
+  <div class="badge">116 學年度學科能力測驗</div>
+  <h1>高三考前<br>考情須知</h1>
+  <div class="date-big">01.22 <span class="dash">—</span> 01.24</div>
+  <div class="date-sub">2027 年 · 星期五至星期日</div>
+  <div class="pills">
+    <span class="pill">3 天考程</span>
+    <span class="pill">6 科自由選考</span>
+    <span class="pill">15 級分制</span>
+  </div>
+  <div class="school">國立鳳新高中　學務處 × 教務處 × 來琬財經轉骨湯</div>
+</div>
+
+<!-- ════ NAV ════ -->
+<div class="nav" id="top">
+  <a href="#schedule">考試日程</a>
+  <a href="#subjects">各科題型</a>
+  <a href="#scores">級分與五標</a>
+  <a href="#routes">升學管道</a>
+  <a href="#star">繁星推薦</a>
+  <a href="#register">報名資訊</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 1 : 考試日程                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="schedule">
+  <div class="sec-head"><span class="sec-num">01</span></div>
+  <h2>考試日程</h2>
+  <p class="lead">三天六科，自然組重心在第一、二天，社會組在第二、三天。</p>
+
+  <div class="days">
+    <!-- Day 1 -->
+    <div class="day">
+      <div class="day-head">
+        <span class="day-label">第一天 · 星期五</span>
+        <span class="day-date">1 月 22 日</span>
+      </div>
+      <div class="timeline">
+        <div class="exam-block" style="background:var(--mint2);border-left:4px solid var(--mint)">
+          <div class="subj">數學 A</div>
+          <div class="time">09:20 — 11:00</div>
+          <div class="meta"><b>100</b> 分鐘 · 滿分 <b>100</b> 分</div>
+        </div>
+        <div class="break-dot">···</div>
+        <div class="exam-block" style="background:var(--warm2);border-left:4px solid var(--warm)">
+          <div class="subj">自　然</div>
+          <div class="time">12:50 — 14:40</div>
+          <div class="meta"><b>110</b> 分鐘 · 滿分 <b>128</b> 分<br>物理 · 化學 · 生物 · 地球科學</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day">
+      <div class="day-head">
+        <span class="day-label">第二天 · 星期六</span>
+        <span class="day-date">1 月 23 日</span>
+      </div>
+      <div class="timeline">
+        <div class="exam-block" style="background:var(--blue2);border-left:4px solid var(--blue)">
+          <div class="subj">英　文</div>
+          <div class="time">09:20 — 11:00</div>
+          <div class="meta"><b>100</b> 分鐘 · 滿分 <b>100</b> 分</div>
+        </div>
+        <div class="break-dot">···</div>
+        <div class="exam-block" style="background:var(--peach2);border-left:4px solid var(--peach)">
+          <div class="subj">國　綜</div>
+          <div class="time">12:50 — 14:20</div>
+          <div class="meta"><b>90</b> 分鐘 · 滿分 <b>100</b> 分</div>
+        </div>
+        <div class="break-dot">···</div>
+        <div class="exam-block" style="background:var(--peach2);border-left:4px solid #E0A98E">
+          <div class="subj">國　寫</div>
+          <div class="time">15:20 — 16:50</div>
+          <div class="meta"><b>90</b> 分鐘 · 滿分 <b>50</b> 分</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day">
+      <div class="day-head">
+        <span class="day-label">第三天 · 星期日</span>
+        <span class="day-date">1 月 24 日</span>
+      </div>
+      <div class="timeline">
+        <div class="exam-block" style="background:var(--pink2);border-left:4px solid var(--pink)">
+          <div class="subj">數學 B</div>
+          <div class="time">09:20 — 11:00</div>
+          <div class="meta"><b>100</b> 分鐘 · 滿分 <b>100</b> 分</div>
+        </div>
+        <div class="break-dot">···</div>
+        <div class="exam-block" style="background:var(--sky2);border-left:4px solid var(--sky)">
+          <div class="subj">社　會</div>
+          <div class="time">12:50 — 14:40</div>
+          <div class="meta"><b>110</b> 分鐘 · 滿分 <b>144</b> 分<br>歷史 · 地理 · 公民與社會</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="key" style="margin-top:20px">
+    <b>國文成績怎麼算？</b><br>
+    國綜與國寫屬於同一考科，合併計分：<b>國文 ＝ 國綜 × 0.5 ＋ 國寫 × 1</b><br>
+    例如國綜 80 分、國寫 38 分 → 國文成績 = 80 × 0.5 + 38 = <b>78 分</b>
+  </div>
+
+  <div class="note">
+    <b>專注力提醒：</b>自然與社會考科長達 110 分鐘，自然科考卷約 19 頁、含 30–40 張圖表。提前練習長時間專注與圖文整合速讀是關鍵。
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 2 : 各科題型                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="subjects">
+  <div class="sec-head"><span class="sec-num">02</span></div>
+  <h2>各科題型與配分</h2>
+  <p class="lead">108 課綱部定必修範圍。各科測驗範圍：國文、英文為高一至高三上；數學、社會、自然為高一至高二。</p>
+
+  <div class="subj-grid">
+
+    <!-- 國綜 -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--peach)"></div>
+      <div class="subj-card-head">
+        <span class="name">國綜</span>
+        <span class="score"><em>100</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>題型</th><th>題數</th><th>配分</th></tr>
+          <tr><td>單選</td><td>25 題</td><td>50 分</td></tr>
+          <tr><td>多選</td><td>7 題</td><td>28 分</td></tr>
+          <tr><td>混合題一</td><td>單選1＋非選1</td><td>8 分</td></tr>
+          <tr><td>混合題二</td><td>單選1＋非選2</td><td>14 分</td></tr>
+        </table>
+        <div class="note-line">90 分鐘 · 含閱讀理解與論述</div>
+      </div>
+    </div>
+
+    <!-- 國寫 -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:#E0A98E"></div>
+      <div class="subj-card-head">
+        <span class="name">國寫</span>
+        <span class="score"><em>50</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>題型</th><th>說明</th><th>配分</th></tr>
+          <tr><td>知性題</td><td>小題一 4分 + 小題二 21分</td><td>25 分</td></tr>
+          <tr><td>情意題</td><td>作文，答案卷背面書寫</td><td>25 分</td></tr>
+        </table>
+        <div class="note-line">90 分鐘 · 情意題不限行數</div>
+      </div>
+    </div>
+
+    <!-- 英文 -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--blue)"></div>
+      <div class="subj-card-head">
+        <span class="name">英文</span>
+        <span class="score"><em>100</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>題型</th><th>題數</th><th>配分</th></tr>
+          <tr><td>詞彙</td><td>10 題</td><td>10 分</td></tr>
+          <tr><td>綜合測驗</td><td>10 題</td><td>10 分</td></tr>
+          <tr><td>文意選填</td><td>10 題</td><td>10 分</td></tr>
+          <tr><td>篇章結構</td><td>4 題</td><td>8 分</td></tr>
+          <tr><td>閱讀測驗</td><td>12 題</td><td>24 分</td></tr>
+          <tr><td>混合題</td><td>—</td><td>10 分</td></tr>
+          <tr><td>中翻英</td><td>2 題</td><td>8 分</td></tr>
+          <tr><td>英文作文</td><td>1 題</td><td>20 分</td></tr>
+        </table>
+        <div class="note-line">100 分鐘 · 預留翻譯與作文時間</div>
+      </div>
+    </div>
+
+    <!-- 數A -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--mint)"></div>
+      <div class="subj-card-head">
+        <span class="name">數學 A</span>
+        <span class="score"><em>100</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>題型</th><th>每題</th><th>配分</th></tr>
+          <tr><td>單選</td><td>5 分</td><td>30 分</td></tr>
+          <tr><td>多選</td><td>5 分</td><td>30 分</td></tr>
+          <tr><td>選填</td><td>5 分</td><td>25 分</td></tr>
+          <tr><td>混合題＋非選</td><td>—</td><td>15 分</td></tr>
+        </table>
+        <div class="note-line">100 分鐘 · 選填須全對才給分、答錯不倒扣</div>
+      </div>
+    </div>
+
+    <!-- 數B -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--pink)"></div>
+      <div class="subj-card-head">
+        <span class="name">數學 B</span>
+        <span class="score"><em>100</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>題型</th><th>每題</th><th>配分</th></tr>
+          <tr><td>單選</td><td>5 分</td><td>35 分</td></tr>
+          <tr><td>多選</td><td>5 分</td><td>25 分</td></tr>
+          <tr><td>選填</td><td>5 分</td><td>25 分</td></tr>
+          <tr><td>混合題＋非選</td><td>—</td><td>15 分</td></tr>
+        </table>
+        <div class="note-line">100 分鐘 · 單選比數 A 多一題</div>
+      </div>
+    </div>
+
+    <!-- 自然 -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--warm)"></div>
+      <div class="subj-card-head">
+        <span class="name">自然</span>
+        <span class="score"><em>128</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>部分</th><th>題型</th><th>配分</th></tr>
+          <tr><td>第一部分</td><td>單選＋多選 36 題×2</td><td>72 分</td></tr>
+          <tr><td>第二部分</td><td>混合題＋非選 6 題組</td><td>56 分</td></tr>
+        </table>
+        <div class="note-line">110 分鐘 · 含探究課程 · 圖表量大</div>
+      </div>
+    </div>
+
+    <!-- 社會 -->
+    <div class="subj-card">
+      <div class="subj-accent" style="background:var(--sky)"></div>
+      <div class="subj-card-head">
+        <span class="name">社會</span>
+        <span class="score"><em>144</em> 分</span>
+      </div>
+      <div class="subj-card-body">
+        <table>
+          <tr><th>部分</th><th>題型</th><th>配分</th></tr>
+          <tr><td>第一部分</td><td>單選 35–46 題×2</td><td>70–92 分</td></tr>
+          <tr><td>第二部分</td><td>混合題＋非選 8–9 題組</td><td>52–74 分</td></tr>
+        </table>
+        <div class="note-line">110 分鐘 · 題數每年浮動（111–114 皆如此）</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 3 : 級分與五標                          -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="scores">
+  <div class="sec-head"><span class="sec-num">03</span></div>
+  <h2>級分與五標</h2>
+  <p class="lead">學測成績以「15 級分制」呈現，不是原始分數。</p>
+
+  <h3 style="font-size:15px;color:var(--ink2);margin:20px 0 12px;letter-spacing:1px">級分怎麼算？</h3>
+  <div class="score-steps">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="desc">取該科<b>全體考生前 1%</b> 的平均原始總分</div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="desc">除以 <b>15</b>，得到一個「<b>級距</b>」</div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="desc">0～1 個級距 = 1 級分<br>1～2 個 = 2 級分<br>⋯以此類推到 <b>15 級分</b></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="label">計算範例 · 英文</div>
+    <div class="formula">
+      前 1% 平均原始總分 = <span class="hl">92.35</span><br>
+      級距 = 92.35 ÷ 15 = <span class="hl">6.16</span><br>
+      1 級分 = 0–6.16 分 · 2 級分 = 6.16–12.32 · ⋯ · 15 級分 = 86.24–100 分
+    </div>
+  </div>
+
+  <div class="note">級距每年、每科不同。成績公告後可到<b>大考中心網站 → 資料統計</b>查詢「原始總分與級分對照表」，不用自己算。</div>
+
+  <!-- 五標 SVG -->
+  <div class="five-std">
+    <h3>五標是什麼？</h3>
+    <p style="font-size:13px;color:var(--light);margin-bottom:20px">五標表示考生在全體中的相對位置，是校系設定「檢定標」（門檻）的依據。</p>
+    <svg viewBox="0 0 700 160" style="width:100%;height:auto;display:block">
+      <!-- bar background -->
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#F9CEBC"/>
+          <stop offset="50%" stop-color="#C4D9EC"/>
+          <stop offset="100%" stop-color="#BDE8E5"/>
+        </linearGradient>
+      </defs>
+      <rect x="50" y="55" width="600" height="36" rx="18" fill="url(#g1)" opacity=".5"/>
+      <rect x="50" y="55" width="600" height="36" rx="18" fill="none" stroke="#E0CDB8" stroke-width="1"/>
+      <!-- markers -->
+      <g font-family="微軟正黑體,sans-serif" font-weight="700">
+        <!-- 底標 12% -->
+        <line x1="122" y1="50" x2="122" y2="96" stroke="#A98A6C" stroke-width="2"/>
+        <circle cx="122" cy="73" r="4" fill="#A98A6C"/>
+        <text x="122" y="38" text-anchor="middle" fill="#3E1F00" font-size="13">底標</text>
+        <text x="122" y="118" text-anchor="middle" fill="#7A5A3C" font-size="11">12%</text>
+        <text x="122" y="133" text-anchor="middle" fill="#A98A6C" font-size="10">後88%</text>
+        <!-- 後標 25% -->
+        <line x1="200" y1="50" x2="200" y2="96" stroke="#A98A6C" stroke-width="2"/>
+        <circle cx="200" cy="73" r="4" fill="#A98A6C"/>
+        <text x="200" y="38" text-anchor="middle" fill="#3E1F00" font-size="13">後標</text>
+        <text x="200" y="118" text-anchor="middle" fill="#7A5A3C" font-size="11">25%</text>
+        <text x="200" y="133" text-anchor="middle" fill="#A98A6C" font-size="10">後75%</text>
+        <!-- 均標 50% -->
+        <line x1="350" y1="50" x2="350" y2="96" stroke="#5E4028" stroke-width="2"/>
+        <circle cx="350" cy="73" r="5" fill="#5E4028"/>
+        <text x="350" y="38" text-anchor="middle" fill="#3E1F00" font-size="14" font-weight="700">均標</text>
+        <text x="350" y="118" text-anchor="middle" fill="#5E4028" font-size="12" font-weight="700">50%</text>
+        <!-- 前標 75% -->
+        <line x1="500" y1="50" x2="500" y2="96" stroke="#A98A6C" stroke-width="2"/>
+        <circle cx="500" cy="73" r="4" fill="#A98A6C"/>
+        <text x="500" y="38" text-anchor="middle" fill="#3E1F00" font-size="13">前標</text>
+        <text x="500" y="118" text-anchor="middle" fill="#7A5A3C" font-size="11">75%</text>
+        <text x="500" y="133" text-anchor="middle" fill="#A98A6C" font-size="10">前25%</text>
+        <!-- 頂標 88% -->
+        <line x1="578" y1="50" x2="578" y2="96" stroke="#A98A6C" stroke-width="2"/>
+        <circle cx="578" cy="73" r="4" fill="#A98A6C"/>
+        <text x="578" y="38" text-anchor="middle" fill="#3E1F00" font-size="13">頂標</text>
+        <text x="578" y="118" text-anchor="middle" fill="#7A5A3C" font-size="11">88%</text>
+        <text x="578" y="133" text-anchor="middle" fill="#A98A6C" font-size="10">前12%</text>
+        <!-- endpoints -->
+        <text x="50" y="80" text-anchor="middle" fill="#A98A6C" font-size="11">0%</text>
+        <text x="650" y="80" text-anchor="start" fill="#A98A6C" font-size="11">100%</text>
+        <!-- arrow -->
+        <text x="620" y="44" fill="#7A5A3C" font-size="10">成績 →</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="key">
+    <b>檢定標 ＝ 門檻。</b>各校系在「校系分則」中自訂檢定標，例如要求英文及數 A 達前標。<b>沒達到就直接被刷掉</b>，與其他科成績無關。理工科系也可能設英文門檻，不能太偏科。
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 4 : 升學管道                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="routes">
+  <div class="sec-head"><span class="sec-num">04</span></div>
+  <h2>四種升學管道</h2>
+  <p class="lead">學測成績可用於繁星推薦、個人申請、分發入學三種管道（特殊選才另計）。</p>
+
+  <div class="route-grid">
+    <div class="route" style="border-top:4px solid var(--peach)">
+      <div class="rname">繁星推薦</div>
+      <div class="rpct">17.9<small>%</small></div>
+      <div class="rdesc">在校成績＋學測門檻<br>3 月報名 → 3 月中放榜</div>
+    </div>
+    <div class="route" style="border-top:4px solid var(--blue)">
+      <div class="rname">個人申請</div>
+      <div class="rpct">57.7<small>%</small></div>
+      <div class="rdesc">學測＋學習歷程＋面試<br>3 月填志願 → 5 月二階</div>
+    </div>
+    <div class="route" style="border-top:4px solid var(--mint)">
+      <div class="rname">分發入學</div>
+      <div class="rpct">22.9<small>%</small></div>
+      <div class="rdesc">學測＋分科測驗成績<br>7 月考分科測驗</div>
+    </div>
+    <div class="route" style="border-top:4px solid var(--grey)">
+      <div class="rname">特殊選才</div>
+      <div class="rpct">1.6<small>%</small></div>
+      <div class="rdesc">各校獨立招生審查<br>11–12 月甄選</div>
+    </div>
+  </div>
+  <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:4px">佔比為 115 學測全國數據，僅供參考</p>
+
+  <div class="key" style="margin-top:20px">
+    <b>學測成績還可以申請：</b>四技二專（74 所技專校院，最多填 5 志願）、五所軍校（分甲乙組）、中央警察大學（最多填 6 志願）。警專為獨立招考，不在此列。
+  </div>
+
+  <!-- 四管道時間軸 -->
+  <h3 style="font-size:15px;color:var(--ink2);margin:28px 0 14px;letter-spacing:1px">四管道時間順序</h3>
+  <div style="overflow-x:auto">
+  <table class="star-table" style="min-width:580px">
+    <thead><tr><th style="width:18%">管道</th><th style="width:22%">時間</th><th style="width:28%">依據</th><th>備註</th></tr></thead>
+    <tbody>
+    <tr><td class="rl">特殊選才</td><td>11–12 月甄選<br>翌年 1 月放榜</td><td>各大學獨立辦理</td><td style="font-size:12px;text-align:left">須放棄錄取才能參加繁星</td></tr>
+    <tr><td class="rl">繁星推薦</td><td>3 月初報名<br>3 月中放榜</td><td>在校成績＋學測門檻</td><td style="font-size:12px;text-align:left">第八學群需二階甄試；須放棄才能參加個人申請</td></tr>
+    <tr class="hi"><td class="rl">個人申請</td><td>3 月中填志願<br>3 月底一階 → 5 月二階</td><td>學測＋學習歷程＋甄試</td><td style="font-size:12px;text-align:left">佔比最高，最多填 6 志願</td></tr>
+    <tr><td class="rl">分發入學</td><td>7 月考分科測驗</td><td>學測＋分科成績</td><td style="font-size:12px;text-align:left">範圍到高三，分科紅利逐年下降</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 4.5 : 數學選考 Q&A                      -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec">
+  <h2>數學選考常見迷思</h2>
+  <p class="lead">數 A、數 B 不是「自然組 vs 社會組」這麼簡單，報名前一定要看校系分則。</p>
+
+  <div class="myth-grid">
+    <div class="myth">
+      <div class="q">數 A 給自然組、數 B 給社會組？</div>
+      <div class="a">看目標校系簡章，不是看組別。例如政大財政採計<b>數 A</b>（非數 B）、逢甲數學系採計<b>數 B</b>（非數 A）。</div>
+    </div>
+    <div class="myth">
+      <div class="q">數 A、數 B 只能擇一報考？</div>
+      <div class="a">兩科考程在<b>不同天</b>（數 A 第一天、數 B 第三天），可以同時報名，不衝突。</div>
+    </div>
+    <div class="myth">
+      <div class="q">數 A 比較難，分數一定比較低？</div>
+      <div class="a">級分是<b>相對分數</b>，每科各自計算級距。難度高 → 大家都低 → 級距也跟著調整，不能直接比較原始分數。</div>
+    </div>
+    <div class="myth">
+      <div class="q">簡章同時列「數 A 及數 B」就是兩科都要考？</div>
+      <div class="a">不是。代表該校系<b>兩科都接受</b>，考生可自行決定考哪一科（或兩科都考再擇優）。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 5 : 繁星推薦                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="star">
+  <div class="sec-head"><span class="sec-num">05</span></div>
+  <h2>繁星推薦</h2>
+  <p class="lead">以在校表現為核心，搭配學測檢定門檻，適合在校成績穩定的同學。</p>
+
+  <div class="key">
+    <b>三個關鍵資格：</b><br>
+    ① 就讀同校未轉學<br>
+    ② 一名學生只能被推薦至 <b>1 校 1 學群</b><br>
+    ③ 同校對同一大學同一學群最多推薦 <b>2 人</b><br><br>
+    <b>在校成績</b>＝高一至高三上共<b>五學期</b>學業總平均（所有計分科目，含音樂、體育、選修）
+  </div>
+
+  <h3 style="font-size:15px;color:var(--ink2);margin:24px 0 12px;letter-spacing:1px">八學群</h3>
+  <div style="overflow-x:auto">
+  <table class="star-table">
+    <thead><tr><th>學群</th><th>涵蓋領域</th><th>115 科系數</th></tr></thead>
+    <tbody>
+    <tr><td class="rl">第一類</td><td>文、法、商、社會科學、教育、管理</td><td><b>865</b></td></tr>
+    <tr><td class="rl">第二類</td><td>理、工</td><td><b>526</b></td></tr>
+    <tr><td class="rl">第三類</td><td>醫、生命科學、農</td><td><b>249</b></td></tr>
+    <tr><td class="rl">第四類</td><td>音樂</td><td>7</td></tr>
+    <tr><td class="rl">第五類</td><td>美術</td><td>35</td></tr>
+    <tr><td class="rl">第六類</td><td>舞蹈</td><td>1</td></tr>
+    <tr><td class="rl">第七類</td><td>體育</td><td>11</td></tr>
+    <tr class="hi"><td class="rl">第八類</td><td>醫學系、牙醫系（需二階甄試）</td><td>18</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 style="font-size:15px;color:var(--ink2);margin:28px 0 12px;letter-spacing:1px">近四年整體錄取率</h3>
+  <div style="background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px">
+    <div class="bars">
+      <div class="bar-item">
+        <div class="bar-val">60.7%</div>
+        <div class="bar-fill" style="height:69%;background:var(--peach)"></div>
+        <div class="bar-label">111</div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-val">62.7%</div>
+        <div class="bar-fill" style="height:72%;background:var(--peach)"></div>
+        <div class="bar-label">112</div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-val">64.1%</div>
+        <div class="bar-fill" style="height:74%;background:var(--peach)"></div>
+        <div class="bar-label">113</div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-val">64.1%</div>
+        <div class="bar-fill" style="height:74%;background:var(--peach)"></div>
+        <div class="bar-label">114</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;font-size:12px;color:var(--muted);margin-top:10px">
+      <span>一至七學群 ≈ 65%</span>
+      <span>第八學群（醫）≈ 30%</span>
+      <span>第八學群（牙）≈ 15%</span>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>注意：</b>錄取率看起來高，但每年錄取門檻（在校百分比）變動大。繁星值得準備，但不建議只押單一管道。
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 6 : 報名資訊                            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="sec" id="register">
+  <div class="sec-head"><span class="sec-num">06</span></div>
+  <h2>學測報名資訊</h2>
+  <p class="lead">以校為單位集體報名，不可遲交、報名後不可更改考試科目。</p>
+
+  <div class="reg-box">
+    <h3>鳳新高中報名時程</h3>
+    <div class="reg-row">
+      <span class="reg-label">報名期間</span>
+      <span class="reg-val">09/14（一）～ 11/03（二）中午 12:30</span>
+    </div>
+    <div class="reg-row">
+      <span class="reg-label">繳費期間</span>
+      <span class="reg-val">11/04（三）～ 11/06（五）中午 12:00</span>
+    </div>
+    <div class="reg-row">
+      <span class="reg-label">可選考科</span>
+      <span class="reg-val">國文 · 英文 · 數A · 數B · 自然 · 社會（六科自由選考）</span>
+    </div>
+    <div class="reg-warn">
+      資料不齊全、費用未繳交即無法報名。學校無法為少數遲交同學延後集體報名作業，請務必留意時間。報名截止後無法更改考試科目。
+    </div>
+  </div>
+
+  <div class="note">
+    <b>116 學測招生簡章</b>預計 11/3 公告。建議先參考 115 學測校系分則了解各系採計科目，待正式簡章出爐後再做最終確認。<br>
+    查詢方式：<b>大學甄選入學委員會</b>網站 → 校系分則查詢。
+  </div>
+</div>
+
+<!-- ════ FOOTER ════ -->
+<div class="foot">
+  <b>國立鳳新高中</b>　學務處 × 教務處 × 來琬財經轉骨湯<br>
+  資料來源：大考中心 116 學年度考試說明、115 學測招生簡章<br>
+  最新規定以大考中心及招生單位公告為準
+</div>
+
+</div><!-- .wrap -->
+</body></html>
