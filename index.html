@@ -6,7 +6,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#492207;--ink2:#3E1F00;--cream:#fcfcfb;--rule:#D8D0C8;--muted:#7A5A3C;--light:#5E4028;
+  --ink:#492207;--ink2:#3E1F00;--body:#4A4440;--cream:#fcfcfb;--rule:#D8D0C8;--muted:#8C8279;--light:#5E5652;
   --peach:#F9CEBC;--peach2:#FDE8DE;
   --blue:#C4D9EC;--blue2:#E2EEF7;
   --mint:#BDE8E5;--mint2:#DBEEED;
@@ -17,7 +17,7 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-serif;
-  background:var(--cream);color:var(--ink);line-height:1.85;
+  background:var(--cream);color:var(--body);line-height:1.85;
   -webkit-print-color-adjust:exact;print-color-adjust:exact}
 .wrap{max-width:960px;margin:0 auto;padding:0 24px 60px}
 
@@ -81,7 +81,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .subj-card-body{padding:0 20px 18px}
 .subj-card table{width:100%;border-collapse:collapse;font-size:14px}
 .subj-card th,.subj-card td{padding:8px 10px;text-align:center;border-bottom:1px solid #F3E9DF}
-.subj-card th{font-weight:700;color:var(--ink2);font-size:12.5px;letter-spacing:.5px}
+.subj-card th{font-weight:700;color:var(--light);font-size:12.5px;letter-spacing:.5px}
 .subj-card tr:last-child td,.subj-card tr:last-child th{border-bottom:none}
 .subj-card .total td{font-weight:700;color:var(--ink2);border-top:1.5px solid var(--rule)}
 .subj-card .note-line{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
@@ -177,11 +177,13 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .res-link .rl-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
 
 /* ── Back to top ── */
-.back-top{display:block;text-align:center;margin:40px auto 0;padding:10px 24px;
-  background:var(--grey2);border:1px solid var(--rule);border-radius:22px;
-  font-size:13px;font-weight:700;color:var(--muted);text-decoration:none;
-  letter-spacing:1px;transition:all .2s;width:fit-content}
-.back-top:hover{background:var(--ink2);color:var(--peach2)}
+.back-top-float{position:fixed;right:24px;bottom:28px;width:44px;height:44px;
+  border-radius:50%;background:var(--ink2);color:var(--peach);border:none;
+  font-size:20px;line-height:44px;text-align:center;cursor:pointer;
+  box-shadow:0 2px 10px rgba(73,34,7,.18);opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .3s;transform:translateY(8px);z-index:200}
+.back-top-float.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.back-top-float:hover{background:#5E4028;transform:translateY(-2px)}
 
 /* ── Footer ── */
 .foot{margin-top:40px;padding:28px 24px;background:var(--grey2);border-top:1.5px solid var(--rule);
@@ -836,7 +838,10 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
   </div>
 </div>
 
-<a class="back-top" href="#top">↑ 回到頂部</a>
+<button class="back-top-float" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂部">↑</button>
+<script>
+(function(){var b=document.getElementById('btt');window.addEventListener('scroll',function(){b.classList.toggle('show',scrollY>400)})})();
+</script>
 
 <!-- ════ FOOTER ════ -->
 <div class="foot">
