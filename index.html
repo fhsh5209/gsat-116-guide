@@ -38,22 +38,26 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 /* ── Nav ── */
 .nav{display:flex;justify-content:center;gap:8px;margin:0 0 40px;flex-wrap:wrap;
   position:sticky;top:0;background:var(--cream);padding:14px 0;z-index:100;
-  border-bottom:1px solid var(--rule);backdrop-filter:blur(6px)}
+  border-bottom:1px solid var(--rule);backdrop-filter:blur(6px);
+  box-shadow:0 2px 8px rgba(73,34,7,.06)}
 .nav a{text-decoration:none;background:var(--ink2);border:none;border-radius:22px;
   padding:8px 22px;font-size:13px;font-weight:700;color:#FDE8DE;letter-spacing:1px;
   transition:all .2s}
 .nav a:hover{background:#5E4028}
 
 /* ── Section headers ── */
-.sec{margin-top:48px}
-.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
-.sec-num{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
-.sec h2{font-size:20px;font-weight:700;color:var(--ink2);letter-spacing:1.5px}
-.sec .lead{font-size:13.5px;color:var(--light);margin-bottom:20px}
+.sec{margin-top:64px;padding-top:8px}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.sec-num{font-size:13px;font-weight:800;color:var(--peach);letter-spacing:3px;text-transform:uppercase;
+  background:var(--ink2);padding:4px 12px;border-radius:14px;line-height:1}
+.sec h2{font-size:26px;font-weight:700;color:var(--ink2);letter-spacing:2px}
+.sec h2::before{content:"";display:block;width:32px;height:3px;background:var(--peach);border-radius:2px;margin-bottom:8px}
+.sec .lead{font-size:13.5px;color:var(--light);margin-bottom:22px}
 
 /* ── Schedule timeline ── */
 .days{display:flex;flex-direction:column;gap:16px}
-.day{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px;overflow:hidden}
+.day{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px;overflow:hidden;
+  box-shadow:0 1px 4px rgba(73,34,7,.04)}
 .day-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px}
 .day-label{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:2px}
 .day-date{font-size:18px;font-weight:700;color:var(--ink2);letter-spacing:1px}
@@ -68,15 +72,16 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 
 /* ── Subject cards ── */
 .subj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.subj-card{background:#fff;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.subj-card{background:#fff;border:1px solid var(--rule);border-radius:10px;overflow:hidden;
+  box-shadow:0 1px 4px rgba(73,34,7,.04)}
 .subj-card-head{padding:16px 20px 12px;display:flex;align-items:baseline;justify-content:space-between}
 .subj-card-head .name{font-size:17px;font-weight:700;color:var(--ink2);letter-spacing:1px}
 .subj-card-head .score{font-size:13px;color:var(--muted)}
 .subj-card-head .score em{font-style:normal;font-size:22px;font-weight:700;color:var(--ink2);margin-right:2px}
 .subj-card-body{padding:0 20px 18px}
-.subj-card table{width:100%;border-collapse:collapse;font-size:13px}
-.subj-card th,.subj-card td{padding:5px 6px;text-align:center;border-bottom:1px solid #F3E9DF}
-.subj-card th{font-weight:700;color:var(--ink2);font-size:12px;letter-spacing:.5px}
+.subj-card table{width:100%;border-collapse:collapse;font-size:14px}
+.subj-card th,.subj-card td{padding:8px 10px;text-align:center;border-bottom:1px solid #F3E9DF}
+.subj-card th{font-weight:700;color:var(--ink2);font-size:12.5px;letter-spacing:.5px}
 .subj-card tr:last-child td,.subj-card tr:last-child th{border-bottom:none}
 .subj-card .total td{font-weight:700;color:var(--ink2);border-top:1.5px solid var(--rule)}
 .subj-card .note-line{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
@@ -107,7 +112,8 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 
 /* ── Myth cards ── */
 .myth-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.myth{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.myth{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px;
+  box-shadow:0 1px 4px rgba(73,34,7,.04)}
 .myth .q{font-size:14px;font-weight:700;color:var(--ink2);margin-bottom:8px;line-height:1.5}
 .myth .q::before{content:"✗ ";color:#D4694A}
 .myth .a{font-size:13px;color:var(--light);line-height:1.7}
@@ -115,7 +121,8 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 
 /* ── Route section ── */
 .route-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin:16px 0}
-.route{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px;text-align:center}
+.route{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px;text-align:center;
+  box-shadow:0 1px 4px rgba(73,34,7,.04)}
 .route .rname{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
 .route .rpct{font-size:28px;font-weight:700;color:var(--ink2);margin:6px 0}
 .route .rpct small{font-size:14px;color:var(--muted)}
@@ -169,10 +176,19 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .res-link .rl-name{font-size:14px;font-weight:700;color:var(--ink2);letter-spacing:.5px}
 .res-link .rl-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
 
+/* ── Back to top ── */
+.back-top{display:block;text-align:center;margin:40px auto 0;padding:10px 24px;
+  background:var(--grey2);border:1px solid var(--rule);border-radius:22px;
+  font-size:13px;font-weight:700;color:var(--muted);text-decoration:none;
+  letter-spacing:1px;transition:all .2s;width:fit-content}
+.back-top:hover{background:var(--ink2);color:var(--peach2)}
+
 /* ── Footer ── */
-.foot{margin-top:52px;padding-top:18px;border-top:1.5px solid var(--rule);color:var(--muted);
-  font-size:12px;line-height:2;text-align:center}
+.foot{margin-top:40px;padding:28px 24px;background:var(--grey2);border-top:1.5px solid var(--rule);
+  color:var(--muted);font-size:12px;line-height:2;text-align:center;border-radius:12px 12px 0 0}
 .foot b{color:var(--ink2)}
+.foot a{color:var(--muted);transition:color .2s}
+.foot a:hover{color:var(--ink2)}
 
 /* ── Responsive ── */
 @media(max-width:600px){
@@ -819,6 +835,8 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
     <b>更多校內資源：</b>「<b>學檔指路人</b>」頁面彙整了奉心人的學習歷程、沃墾教師社群、鄭伊璟老師學檔 6.0、來琬財經轉骨湯等校內教師資源，以及升學社群媒體推薦。
   </div>
 </div>
+
+<a class="back-top" href="#top">↑ 回到頂部</a>
 
 <!-- ════ FOOTER ════ -->
 <div class="foot">
