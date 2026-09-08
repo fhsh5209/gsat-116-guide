@@ -186,11 +186,13 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .back-top-float:hover{background:#D4742E;transform:translateY(-2px)}
 
 /* ── Footer ── */
-.foot{margin-top:40px;padding:28px 24px;background:#f5f4f4;border-top:1.5px solid var(--rule);
-  color:var(--muted);font-size:12px;line-height:2;text-align:center;border-radius:12px}
-.foot b{color:var(--body)}
-.foot a{color:var(--muted);transition:color .2s}
-.foot a:hover{color:var(--ink2)}
+.foot{margin-top:40px;padding:28px 24px;background:#3E1F00;
+  color:rgba(255,255,255,0.5);font-size:12px;line-height:2;text-align:center;border-radius:12px}
+.foot b{color:#FDE8DE}
+.foot .foot-credit{color:#FDE8DE}
+.foot a{color:inherit;transition:color .2s}
+.foot a:hover{color:#fff}
+.foot .foot-credit a{color:#FDE8DE}
 
 /* ── Responsive ── */
 @media(max-width:600px){
@@ -853,8 +855,8 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 
 <!-- ════ FOOTER ════ -->
 <div class="foot">
-  <b>國立鳳新高中</b>　學務處 × 教務處 × <a href="https://www.facebook.com/p/%E4%BE%86%E7%90%AC%E8%B2%A1%E7%B6%93%E8%BD%89%E9%AA%A8%E6%B9%AF-61556140952117/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline">來琬財經轉骨湯</a><br>
-  原始內容 ✦ 來琬財經轉骨湯 │ 網頁製作 ✦ 教務處‧<a href="https://sites.google.com/fhsh.khc.edu.tw/college-counseling/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline">試務組</a><br><br>
+  <span class="foot-credit"><b>國立鳳新高中</b>　學務處 × 教務處 × <a href="https://www.facebook.com/p/%E4%BE%86%E7%90%AC%E8%B2%A1%E7%B6%93%E8%BD%89%E9%AA%A8%E6%B9%AF-61556140952117/" target="_blank" rel="noopener" style="text-decoration:underline">來琬財經轉骨湯</a></span><br>
+  <span class="foot-credit">原始內容 ✦ 來琬財經轉骨湯 │ 網頁製作 ✦ 教務處‧<a href="https://sites.google.com/fhsh.khc.edu.tw/college-counseling/" target="_blank" rel="noopener" style="text-decoration:underline">試務組</a></span><br><br>
   資料來源：大考中心 116 學年度考試說明、115 學測招生簡章<br>
   最新規定以大考中心及招生單位公告為準
 </div>
