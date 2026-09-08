@@ -62,7 +62,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .exam-block{border-radius:8px;padding:14px 16px;flex:1;min-width:140px;position:relative}
 .exam-block .subj{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
 .exam-block .time{font-size:12px;color:var(--light);margin-top:2px;letter-spacing:.5px}
-.exam-block .meta{font-size:11.5px;color:var(--muted);margin-top:6px}
+.exam-block .meta{font-size:11.5px;color:var(--body);margin-top:6px}
 .exam-block .meta b{color:var(--ink2)}
 .break-dot{display:flex;align-items:center;justify-content:center;width:36px;flex-shrink:0;
   color:var(--rule);font-size:18px;letter-spacing:3px}
@@ -81,12 +81,12 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .subj-card th{font-weight:700;color:var(--th);font-size:12.5px;letter-spacing:.5px}
 .subj-card tr:last-child td,.subj-card tr:last-child th{border-bottom:none}
 .subj-card .total td{font-weight:700;color:var(--ink2);border-top:1.5px solid var(--rule)}
-.subj-card .note-line{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+.subj-card .note-line{font-size:12px;color:#b57f5e;font-weight:700;margin-top:10px;line-height:1.6}
 .subj-accent{height:4px;width:100%}
 
 /* ── Key box ── */
-.key{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--peach);
-  padding:18px 22px;border-radius:8px;font-size:14px;margin:16px 0}
+.key{background:#fff;border:1.5px solid var(--rule);border-left:5px solid #E8853A;
+  padding:18px 22px;border-radius:8px;font-size:14px;margin:16px 0;color:var(--body)}
 .key b{color:var(--ink2)}
 
 /* ── Score section ── */
@@ -123,12 +123,12 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .route .rname{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
 .route .rpct{font-size:28px;font-weight:700;color:var(--ink2);margin:6px 0}
 .route .rpct small{font-size:14px;color:var(--muted)}
-.route .rdesc{font-size:12px;color:var(--muted);line-height:1.6;margin-top:6px}
+.route .rdesc{font-size:12px;color:var(--body);line-height:1.6;margin-top:6px}
 
 /* ── Star recommendation ── */
 .star-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border-radius:10px;overflow:hidden;
-  border:1px solid var(--rule)}
-.star-table th,.star-table td{padding:9px 10px;text-align:center;border-bottom:1px solid #F3E9DF}
+  border:1.5px solid var(--rule)}
+.star-table th,.star-table td{padding:9px 10px;text-align:center;border-bottom:1.5px solid #E8DDD3}
 .star-table thead th{background:var(--warm);color:var(--ink2);font-weight:700;letter-spacing:1px;
   border-bottom:1.5px solid var(--rule);font-size:12.5px}
 .star-table .rl{text-align:left;padding-left:14px;font-weight:700;color:var(--ink2)}
@@ -148,11 +148,11 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .bar-item{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;max-width:80px}
 .bar-fill{width:100%;border-radius:6px 6px 0 0;transition:height .3s}
 .bar-label{font-size:12px;font-weight:700;color:var(--ink2)}
-.bar-val{font-size:11px;color:var(--muted)}
+.bar-val{font-size:11px;color:var(--body);font-weight:700}
 
 /* ── Note ── */
-.note{background:var(--grey2);border:1px solid var(--rule);padding:16px 20px;border-radius:8px;
-  font-size:13px;color:var(--light);margin-top:16px;line-height:1.7}
+.note{background:var(--grey2);border:1.5px solid var(--rule);padding:16px 20px;border-radius:8px;
+  font-size:13px;color:var(--body);margin-top:16px;line-height:1.7}
 .note b{color:var(--ink2)}
 
 /* ── Resource section ── */
@@ -555,7 +555,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
   </div>
 
   <div class="key">
-    <b>檢定標 ＝ 門檻。</b>各校系在「校系分則」中自訂檢定標，例如要求英文及數 A 達前標。<b>沒達到就直接被刷掉</b>，與其他科成績無關。理工科系也可能設英文門檻，不能太偏科。
+    <b>檢定標 ＝ 門檻。</b>各校系在「<a href="https://www.cac.edu.tw/apply116/query.php" target="_blank" rel="noopener" title="11/3公告" style="color:var(--ink2);text-decoration:underline">校系分則</a>」中自訂檢定標，例如要求英文及數 A 達前標。<b>沒達到就直接被刷掉</b>，與其他科成績無關。理工科系也可能設英文門檻，不能太偏科。
   </div>
 </div>
 
@@ -564,7 +564,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 <!-- ═══════════════════════════════════════════════ -->
 <div class="sec" id="routes">
   <div class="sec-head"><span class="sec-num">04</span></div>
-  <h2>四種升學管道</h2>
+  <h2>三大升學管道</h2>
   <p class="lead">學測成績可用於繁星推薦、個人申請、分發入學三種管道（特殊選才另計）。</p>
 
   <div class="route-grid">
@@ -589,7 +589,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
       <div class="rdesc">各校獨立招生審查<br>11–12 月甄選</div>
     </div>
   </div>
-  <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:4px">佔比為 115 學測全國數據，僅供參考</p>
+  <p style="font-size:12px;color:var(--body);text-align:center;margin-top:4px">佔比為 115 學測全國數據，僅供參考</p>
 
   <div class="key" style="margin-top:20px">
     <b>學測成績還可以申請：</b>四技二專（74 所技專校院，最多填 5 志願）、五所軍校（分甲乙組）、中央警察大學（最多填 6 志願）。警專為獨立招考，不在此列。
@@ -615,7 +615,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 <!-- ═══════════════════════════════════════════════ -->
 <div class="sec">
   <h2>數學選考常見迷思</h2>
-  <p class="lead">數 A、數 B 不是「自然組 vs 社會組」這麼簡單，報名前一定要看校系分則。</p>
+  <p class="lead">數 A、數 B 不是「自然組 vs 社會組」這麼簡單，報名前一定要看<a href="https://www.cac.edu.tw/apply116/query.php" target="_blank" rel="noopener" title="11/3公告" style="color:var(--ink2);text-decoration:underline">校系分則</a>。</p>
 
   <div class="myth-grid">
     <div class="myth">
@@ -694,7 +694,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
         <div class="bar-label">114</div>
       </div>
     </div>
-    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;font-size:12px;color:var(--muted);margin-top:10px">
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;font-size:12px;color:var(--body);margin-top:10px">
       <span>一至七學群 ≈ 65%</span>
       <span>第八學群（醫）≈ 30%</span>
       <span>第八學群（牙）≈ 15%</span>
@@ -734,8 +734,8 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
   </div>
 
   <div class="note">
-    <b>116 學測招生簡章</b>預計 11/3 公告。建議先參考 115 學測校系分則了解各系採計科目，待正式簡章出爐後再做最終確認。<br>
-    查詢方式：<b>大學甄選入學委員會</b>網站 → 校系分則查詢。
+    <b>116 學測招生簡章</b>預計 11/3 公告。建議先參考 115 學測<a href="https://www.cac.edu.tw/apply116/query.php" target="_blank" rel="noopener" title="11/3公告" style="color:var(--ink2);text-decoration:underline">校系分則</a>了解各系採計科目，待正式簡章出爐後再做最終確認。<br>
+    查詢方式：<b>大學甄選入學委員會</b>網站 → <a href="https://www.cac.edu.tw/apply116/query.php" target="_blank" rel="noopener" title="11/3公告" style="color:var(--ink2);text-decoration:underline">校系分則查詢</a>。
   </div>
 </div>
 
@@ -800,11 +800,11 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
             <span class="rl-desc">考試資訊 · 歷年統計資料 · 級距與五標查詢</span>
           </span>
         </a></li>
-        <li><a class="res-link" href="https://www.cac.edu.tw/" target="_blank" rel="noopener">
+        <li><a class="res-link" href="https://www.cac.edu.tw/apply116/query.php" target="_blank" rel="noopener" title="11/3公告">
           <svg viewBox="0 0 24 24" fill="none" stroke="#7A5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
           <span class="rl-text">
             <span class="rl-name">校系分則查詢</span>
-            <span class="rl-desc">甄選入學委員會 · 各校系採計科目與檢定門檻</span>
+            <span class="rl-desc">甄選入學委員會 · 各校系採計科目與檢定門檻（11/3 公告）</span>
           </span>
         </a></li>
         <li><a class="res-link" href="https://collego.edu.tw/" target="_blank" rel="noopener">
@@ -830,15 +830,19 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
   </div>
 </div>
 
-<button class="back-top-float" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂部"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
+<button class="back-top-float" id="btt" aria-label="回到頂部"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
 <script>
-(function(){var b=document.getElementById('btt');window.addEventListener('scroll',function(){b.classList.toggle('show',scrollY>400)})})();
+(function(){
+  var b=document.getElementById('btt');
+  b.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+  window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>400)});
+})();
 </script>
 
 <!-- ════ FOOTER ════ -->
 <div class="foot">
   <b>國立鳳新高中</b>　學務處 × 教務處 × <a href="https://www.facebook.com/p/%E4%BE%86%E7%90%AC%E8%B2%A1%E7%B6%93%E8%BD%89%E9%AA%A8%E6%B9%AF-61556140952117/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline">來琬財經轉骨湯</a><br>
-  內容設計 ✦ 來琬財經轉骨湯│網頁製作維護 ✦ 教務處‧試務組<br><br>
+  內容設計 ✦ 來琬財經轉骨湯│網頁製作維護 ✦ 教務處‧<a href="https://sites.google.com/fhsh.khc.edu.tw/college-counseling/" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:underline">試務組</a><br><br>
   資料來源：大考中心 116 學年度考試說明、115 學測招生簡章<br>
   最新規定以大考中心及招生單位公告為準
 </div>
