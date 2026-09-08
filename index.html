@@ -15,6 +15,7 @@
   --warm:#FAE0C6;--warm2:#FAEEDE;
   --grey:#E4DCD5;--grey2:#F0ECE8;
 }
+b{color:#cc6121}
 html{scroll-behavior:smooth}
 body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-serif;
   background:var(--cream);color:var(--body);font-weight:400;line-height:1.85;
@@ -64,7 +65,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .exam-block .subj{font-size:16px;font-weight:700;color:var(--ink2);letter-spacing:1px}
 .exam-block .time{font-size:12px;color:var(--light);margin-top:2px;letter-spacing:.5px}
 .exam-block .meta{font-size:11.5px;color:var(--body);margin-top:6px}
-.exam-block .meta b{color:var(--ink2)}
+.exam-block .meta b{color:#cc6121}
 .break-dot{display:flex;align-items:center;justify-content:center;width:36px;flex-shrink:0;
   color:var(--rule);font-size:18px;letter-spacing:3px}
 
@@ -88,7 +89,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 /* ── Key box ── */
 .key{background:#fff;border:1.5px solid var(--rule);border-left:5px solid #E8853A;
   padding:18px 22px;border-radius:8px;font-size:14px;margin:16px 0;color:var(--body)}
-.key b{color:var(--ink2)}
+.key b{color:#cc6121}
 
 /* ── Score section ── */
 .score-steps{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
@@ -97,7 +98,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .step .num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
   border-radius:50%;background:var(--peach);font-size:14px;font-weight:700;color:var(--ink2)}
 .step .desc{font-size:13px;color:var(--light);margin-top:8px;line-height:1.6}
-.step .desc b{color:var(--ink2)}
+.step .desc b{color:#cc6121}
 
 .example{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px;margin:16px 0}
 .example .label{font-size:12px;color:var(--muted);letter-spacing:1px;font-weight:700;margin-bottom:10px}
@@ -145,16 +146,16 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 .reg-warn{font-size:12.5px;color:#A0561A;font-weight:700;margin-top:8px;line-height:1.6}
 
 /* ── Bar chart mini ── */
-.bars{display:flex;align-items:flex-end;gap:18px;justify-content:center;height:120px;margin:16px 0;padding:0 20px}
+.bars{display:flex;align-items:flex-end;gap:18px;justify-content:center;margin:16px 0;padding:0 20px}
 .bar-item{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;max-width:80px}
-.bar-fill{width:100%;border-radius:6px 6px 0 0;transition:height .3s}
+.bar-fill{width:100%;border-radius:6px 6px 0 0}
 .bar-label{font-size:12px;font-weight:700;color:var(--ink2)}
 .bar-val{font-size:11px;color:var(--body);font-weight:700}
 
 /* ── Note ── */
 .note{background:var(--grey2);border:1.5px solid var(--rule);padding:16px 20px;border-radius:8px;
   font-size:13px;color:var(--body);margin-top:16px;line-height:1.7}
-.note b{color:var(--ink2)}
+.note b{color:#cc6121}
 
 /* ── Resource section ── */
 .res-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}
@@ -186,7 +187,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
 /* ── Footer ── */
 .foot{margin-top:40px;padding:28px 24px;background:var(--grey2);border-top:1.5px solid var(--rule);
   color:var(--muted);font-size:12px;line-height:2;text-align:center;border-radius:12px 12px 0 0}
-.foot b{color:var(--ink2)}
+.foot b{color:var(--body)}
 .foot a{color:var(--muted);transition:color .2s}
 .foot a:hover{color:var(--ink2)}
 
@@ -676,22 +677,22 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
     <div class="bars">
       <div class="bar-item">
         <div class="bar-val">60.7%</div>
-        <div class="bar-fill" style="height:69%;background:#E8853A"></div>
+        <div class="bar-fill" style="height:76px;background:#E8853A"></div>
         <div class="bar-label">111</div>
       </div>
       <div class="bar-item">
         <div class="bar-val">62.7%</div>
-        <div class="bar-fill" style="height:72%;background:#E8853A"></div>
+        <div class="bar-fill" style="height:80px;background:#E8853A"></div>
         <div class="bar-label">112</div>
       </div>
       <div class="bar-item">
         <div class="bar-val">64.1%</div>
-        <div class="bar-fill" style="height:74%;background:#E8853A"></div>
+        <div class="bar-fill" style="height:84px;background:#E8853A"></div>
         <div class="bar-label">113</div>
       </div>
       <div class="bar-item">
         <div class="bar-val">64.1%</div>
-        <div class="bar-fill" style="height:74%;background:#E8853A"></div>
+        <div class="bar-fill" style="height:84px;background:#E8853A"></div>
         <div class="bar-label">114</div>
       </div>
     </div>
@@ -728,6 +729,10 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
     <div class="reg-row">
       <span class="reg-label">可選考科</span>
       <span class="reg-val">國文 · 英文 · 數A · 數B · 自然 · 社會（六科自由選考）</span>
+    </div>
+    <div class="reg-row">
+      <span class="reg-label">報名網址</span>
+      <span class="reg-val"><a href="https://web.fhsh.khc.edu.tw/univ/" target="_blank" rel="noopener" style="color:var(--ink2);text-decoration:underline">https://web.fhsh.khc.edu.tw/univ/</a></span>
     </div>
     <div class="reg-warn">
       資料不齊全、費用未繳交即無法報名。學校無法為少數遲交同學延後集體報名作業，請務必留意時間。報名截止後無法更改考試科目。
@@ -774,7 +779,7 @@ body{font-family:"微軟正黑體","Microsoft JhengHei","Noto Sans TC",sans-seri
           <svg viewBox="0 0 24 24" fill="none" stroke="#7A5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           <span class="rl-text">
             <span class="rl-name">繁星推薦說明會簡報</span>
-            <span class="rl-desc">鳳新高中 115 學年繁星說明會完整投影片</span>
+            <span class="rl-desc">鳳新高中 115 學年(去年)繁星說明會完整投影片</span>
           </span>
         </a></li>
         <li><a class="res-link" href="https://drive.google.com/file/d/1tUGrbCuLuBsV3_j5H5RbRyskL0TUjWWR/view" target="_blank" rel="noopener">
